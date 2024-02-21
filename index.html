@@ -67,12 +67,18 @@
 
         try {
           // Faz uma requisição para a sua API
-          await fetch("INSIRA O LINK DA SUA API AQUI", {
+          await fetch("https://meu-banco-de-dados-a5uw.onrender.com/formulario", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
             },
             body: JSON.stringify(dados),
+          }).then((response) =>{
+            if(response.ok){
+              alert("Formulario enviado com sucesso");
+            }else{
+              alert("Erro ao enviar formulario!");
+            }
           });
         } catch (error) {
           console.log(error);
