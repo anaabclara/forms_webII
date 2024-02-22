@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Formulário Desenvolvimento WEB II</title>
+    <title>Formulário Para Login</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -14,6 +14,9 @@
   </head>
   <body>
     <div class="container">
+      <div class="buttons">
+        <a href="listagem.html" class="btn">Ver Formulario</a>
+      </div>
       <header>
         <img src="/assets/icone.png" alt="Logo" class="logo" />
         <h1 class="heading">Formulário Para Login</h1>
@@ -67,7 +70,7 @@
 
         try {
           // Faz uma requisição para a sua API
-          await fetch("https://meu-banco-de-dados-a5uw.onrender.com/formulario", {
+          await fetch("https://meu-banco-de-dados-a5uw.onrender.com/Formulario", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",
